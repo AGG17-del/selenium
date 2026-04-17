@@ -32,7 +32,7 @@ class Test_FirstTest(BaseTest):
         
         productList = ProductListPage(self.driver)
         productList.clickOn_FilterOnStock()
-        sleep(3)
+        sleep(5)
         productList.select_ProductItem()
         
         add_item = ProductPage(self.driver)
