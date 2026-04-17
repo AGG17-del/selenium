@@ -5,7 +5,7 @@ class ProductListPage():
 
     def __init__(self, driver: WebDriver):
          self.driver = driver
-         self.lbl_availablityFilter = '(//*[contains(text(), "In stock")])[2]/..'
+         self.lbl_availablityFilter = '//*[@id="mz-fss-0--1"]//following-sibling::label'
          self.productItem = '(//*[@class= "carousel-item active"]/*[@class= "lazy-load"])[3]'
 
     def clickOn_FilterOnStock(self):
